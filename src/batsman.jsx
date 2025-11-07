@@ -18,7 +18,10 @@ export default function Batsman(){
     return (
       <div style={BatsmanStyle}>
         <h3>Player: Bangle Tiger</h3>
-        <h1>Score:{runs} </h1>
+        {
+            runs>50 && <p>Your Score 50</p>
+        }
+        <h2>Score:{runs} </h2>
         <button onClick={()=>{handleRuns(1)}}>Single</button>
         <button onClick={()=>{handleRuns(2)}}>Double</button>
         <button onClick={()=>{handleRuns(4)}}>Four</button>
