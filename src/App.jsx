@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Counter from './Counter.jsx'
 import './App.css'
 
 function App() {
@@ -14,6 +12,8 @@ function App() {
   return (
     <>
       <h3>Vite + React</h3>
+      <Counter></Counter>
+
       <button onClick={handleClick}>Click Me</button>
       <button
         onClick={function handleClick2() {
